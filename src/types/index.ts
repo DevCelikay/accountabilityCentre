@@ -11,7 +11,7 @@ export interface Client {
 
 export interface Task {
   id: string;
-  clientId: string;
+  clientId?: string;
   title: string;
   description?: string;
   priority: 'low' | 'medium' | 'high' | 'urgent';

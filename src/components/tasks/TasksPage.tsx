@@ -183,7 +183,7 @@ export default function TasksPage() {
                   <TaskCard
                     key={task.id}
                     task={task}
-                    client={clientMap[task.clientId]}
+                    client={task.clientId ? clientMap[task.clientId] : undefined}
                     onEdit={handleEdit}
                     onDelete={deleteTask}
                     onToggleComplete={handleToggleComplete}
@@ -208,7 +208,7 @@ export default function TasksPage() {
                   <TaskCard
                     key={task.id}
                     task={task}
-                    client={clientMap[task.clientId]}
+                    client={task.clientId ? clientMap[task.clientId] : undefined}
                     onEdit={handleEdit}
                     onDelete={deleteTask}
                     onToggleComplete={handleToggleComplete}
@@ -233,7 +233,7 @@ export default function TasksPage() {
                   <TaskCard
                     key={task.id}
                     task={task}
-                    client={clientMap[task.clientId]}
+                    client={task.clientId ? clientMap[task.clientId] : undefined}
                     onEdit={handleEdit}
                     onDelete={deleteTask}
                     onToggleComplete={handleToggleComplete}
@@ -258,7 +258,7 @@ export default function TasksPage() {
                   <TaskCard
                     key={task.id}
                     task={task}
-                    client={clientMap[task.clientId]}
+                    client={task.clientId ? clientMap[task.clientId] : undefined}
                     onEdit={handleEdit}
                     onDelete={deleteTask}
                     onToggleComplete={handleToggleComplete}
